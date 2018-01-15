@@ -33,6 +33,6 @@ defmodule Proxy.Mixfile do
   defp deps do
     [{:cowboy, "~> 1.0.0"},
      {:plug, "~> 0.11.1"},
-     {:hackney, "~> 1.1.0"}]
+     {:hackney, "~> 1.10.0"}]
   end
 end
