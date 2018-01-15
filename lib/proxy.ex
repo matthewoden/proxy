@@ -4,7 +4,6 @@ defmodule Proxy do
 
   @target "http://google.com"
 
-  plug Plug.Logger
   plug :dispatch
 
   def start(_argv) do
