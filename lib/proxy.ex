@@ -54,7 +54,7 @@ defmodule Proxy do
   end
 
   defp uri(conn) do
-    base = @target <> "/" <> Enum.join(conn.path_info, "/")
+    base = conn.host <> "/" <> Enum.join(conn.path_info, "/")
     case conn.query_string do
       "" -> base
       qs -> base <> "?" <> qs
