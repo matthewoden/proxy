@@ -2,8 +2,6 @@ defmodule Proxy do
   use Plug.Builder
   import Plug.Conn
 
-  @target "http://google.com"
-
   plug :dispatch
 
   def start(_argv) do
