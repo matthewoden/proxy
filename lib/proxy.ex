@@ -9,7 +9,6 @@ defmodule Proxy do
   def start(_argv) do
     port = 4001
     Plug.Adapters.Cowboy.http __MODULE__, [], port: port
-    :timer.sleep(:infinity)
   end
 
   def dispatch(conn, _opts) do
