@@ -9,7 +9,6 @@ defmodule Proxy do
 
   def start(_argv) do
     port = 4001
-    IO.puts "Running Proxy with Cowboy on http://localhost:#{port}"
     Plug.Adapters.Cowboy.http __MODULE__, [], port: port
     :timer.sleep(:infinity)
   end
